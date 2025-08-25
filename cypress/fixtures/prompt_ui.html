@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Test Generator</title>
+</head>
+<body>
+  <div style="padding: 20px; font-family: sans-serif;">
+    <h1>AI 테스트 생성기</h1>
+    <p>생성하고 싶은 테스트에 대한 설명을 입력하세요.</p>
+    <textarea id="aiPrompt" rows="5" style="width: 500px; padding: 8px; font-size: 14px;" placeholder="예: 대한항공 웹사이트에 방문하여 쿠키 동의 버튼을 클릭합니다."></textarea>
+    <br><br>
+    <button id="aiRun" style="padding: 10px 15px; font-size: 16px;">AI로 테스트 생성</button>
+    <p><strong>생성된 코드:</strong></p>
+    <pre id="aiOutput" style="background:#f4f4f4; padding:15px; border:1px solid #ddd; min-height: 150px; white-space: pre-wrap; word-wrap: break-word;"></pre>
+  </div>
+</body>
+</html>
