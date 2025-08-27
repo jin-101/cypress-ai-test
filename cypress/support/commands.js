@@ -44,7 +44,7 @@ Cypress.Commands.add('handleCookie', (options = {}) => {
  * @param {string} id - 로그인 아이디
  * @param {string} password - 로그인 비밀번호
  */
-Cypress.Commands.add('handleLogin', ({id, password, options = {}}) => {
+Cypress.Commands.add('handleLogin', (id, password, options = {}) => {
     const { timeout = 200000 } = options;
     cy.log(`'${id}' 계정으로 로그인 시도`);
 
@@ -76,7 +76,7 @@ Cypress.Commands.add('interCeptTranslate', () => {
     }).as(`translation`)
 });
 
-Cypress.Commands.add('handleDestination', ({arrival, options = {}}) => {
+Cypress.Commands.add('handleDestination', (arrival, options = {}) => {
   //도착지 선택
   const { timeout = 200000 } = options;
   
@@ -89,7 +89,7 @@ Cypress.Commands.add('handleDestination', ({arrival, options = {}}) => {
       .type(`${arrival}{enter}`);
 });
 
-Cypress.Commands.add('handleDate', ({departureDate, arrivalDate , options = {}}) => {
+Cypress.Commands.add('handleDate', (departureDate, arrivalDate , options = {}) => {
   const { timeout = 200000 } = options;
   cy.get('button.quickbookings__datepicker',{timeout})
       .should('exist')
@@ -110,7 +110,7 @@ Cypress.Commands.add('handleDate', ({departureDate, arrivalDate , options = {}})
 });
 
 
-Cypress.Commands.add('handleCabinClass', ({cabin, options = {}}) => {
+Cypress.Commands.add('handleCabinClass', (cabin, options = {}) => {
   const { timeout = 200000 } = options;
   //좌석 등급
   // cy.contains('span', translate.W011802,{timeout:maxTimeout}).click({force:true}); // 다국어로 찾아 클릭
