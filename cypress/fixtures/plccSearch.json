@@ -1,0 +1,14 @@
+{
+  "chnlCd": "DPAY",
+  "resDate": "20250808133427",
+  "mbrId": "Z+5vrEWrHglwO6PmLRMcLg==",
+  "resultCode": "9201",
+  "resultMsg": "조회된 카드 없음",
+  "seqNo": null,
+  "trxNo": "A11202508081334276754376",
+  "payListCnt": null,
+  "payList": null,
+  "filler": null,
+  "hashVal": "0fd41203d038cd955c285d15876aac976205e96a13681505ef76b58cf62bff35",
+  "mid": null
+}

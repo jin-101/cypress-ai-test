@@ -1,0 +1,69 @@
+{
+  "travellerElectronCouponList": [
+    {
+      "skypassNumber": "799318850124",
+      "electronCouponList": [
+        {
+          "ecpnAuthNumber": "E25SELCR26637",
+          "accualDiscountAmount": "100000",
+          "ecpnIssuedDate": "20250512",
+          "ecpnExpireDate": "20260512",
+          "couponStatusCode": "TVOD",
+          "ffpNumber": "731928326808",
+          "sendYn": "N",
+          "remainDiscountAmount": "100000",
+          "exChangeCurrency": "KRW",
+          "exChangeEcpnAmount": "100000",
+          "currency": "KRW",
+          "couponValidate": true,
+          "notValidateCode": ""
+        },
+        {
+          "ecpnAuthNumber": "E25SELCR26661",
+          "accualDiscountAmount": "500000",
+          "ecpnIssuedDate": "20250721",
+          "ecpnExpireDate": "20260721",
+          "couponStatusCode": "OPEN",
+          "ffpNumber": "731928326808",
+          "sendYn": "N",
+          "remainDiscountAmount": "500000",
+          "exChangeCurrency": "KRW",
+          "exChangeEcpnAmount": "500000",
+          "currency": "KRW",
+          "couponValidate": true,
+          "notValidateCode": ""
+        },
+        {
+          "ecpnAuthNumber": "E25SELCR26662",
+          "accualDiscountAmount": "500000",
+          "ecpnIssuedDate": "20250721",
+          "ecpnExpireDate": "20260721",
+          "couponStatusCode": "OPEN",
+          "ffpNumber": "731928326808",
+          "sendYn": "N",
+          "remainDiscountAmount": "500000",
+          "exChangeCurrency": "KRW",
+          "exChangeEcpnAmount": "500000",
+          "currency": "KRW",
+          "couponValidate": true,
+          "notValidateCode": ""
+        },
+        {
+          "ecpnAuthNumber": "E24SELCR26320",
+          "accualDiscountAmount": "500000",
+          "ecpnIssuedDate": "20241017",
+          "ecpnExpireDate": "20251017",
+          "couponStatusCode": "USED",
+          "ffpNumber": "731928326808",
+          "sendYn": "N",
+          "remainDiscountAmount": "61600",
+          "exChangeCurrency": "KRW",
+          "exChangeEcpnAmount": "61600",
+          "currency": "KRW",
+          "couponValidate": true,
+          "notValidateCode": ""
+        }
+      ]
+    }
+  ]
+}

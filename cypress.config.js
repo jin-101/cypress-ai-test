@@ -1,5 +1,11 @@
 const { defineConfig } = require("cypress");
 module.exports = defineConfig({
+  env: {
+    language : 'ko',
+    baseUrl : 'https://wwwdevt.koreanair.com',
+    translateApiCommonPath : '/api/et/uiCommon/c/i/languageInfo',
+    translate: {}
+  },
   e2e: {
     // viewport는 여기서 설정
     viewportWidth: 1280,

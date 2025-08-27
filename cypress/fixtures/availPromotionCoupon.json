@@ -1,0 +1,864 @@
+{
+  "promotionDiscountCouponList": [
+    {
+      "available": true,
+      "prodCode": "PRSN",
+      "promotionId": "2504CDTNAHLKP",
+      "couponCode": "2504CDTNAHLKP000001",
+      "couponDescription": "CDI 오류_30만원",
+      "couponIssueDate": "20250429",
+      "couponType": "T",
+      "ownershipDep": "CDI",
+      "aliasName": "",
+      "couponDetailCondition": {
+        "domestic": false,
+        "deviceType": "A",
+        "applyCountryList": [],
+        "discountType": "A",
+        "discountRate": "",
+        "discountAmount": "300000.00",
+        "discountCurrency": "KRW",
+        "applyBookingClassList": [
+          "Y",
+          "B",
+          "M",
+          "S",
+          "H",
+          "E",
+          "K",
+          "L",
+          "L",
+          "U",
+          "U",
+          "Q",
+          "Q"
+        ],
+        "applyFareFamilyList": [],
+        "applyToKeFlight": true,
+        "excludeKeMarketCodeshare": true,
+        "applyDiscountCouponBoundList": [
+          {
+            "boundType": "O",
+            "includeBoundList": [
+              {
+                "departureArea": "ALL",
+                "arrivalArea": "ALL",
+                "departureAirport": "ALL",
+                "arrivalAirport": "ALL",
+                "includeFlightList": [],
+                "excludeFlightList": [
+                  {
+                    "carrierCode": "",
+                    "flightNumber": "",
+                    "toFlightNumber": ""
+                  }
+                ]
+              }
+            ],
+            "excludeBoundList": [],
+            "includeDeparturePeriodList": [
+              {
+                "periodType": "AFTER",
+                "periodSubType": "ISSUE",
+                "fromPeriodOfWithin": "",
+                "toPeriodOfWithin": "",
+                "periodOfBeforeAfter": "365",
+                "fromDate": "20250429",
+                "toDate": "20260429"
+              }
+            ],
+            "excludeDeparturePeriodList": [],
+            "applyDayOfWeek": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": true,
+              "sat": true,
+              "sun": true
+            }
+          }
+        ],
+        "applyFromDateTime": "20250429154046",
+        "applyToDateTime": "20260429235959",
+        "availableUseCount": "1",
+        "needLogin": true,
+        "beneficiaryInfo": {
+          "holder": true,
+          "family": false,
+          "personal": false
+        },
+        "usePaxLimit": false,
+        "minPaxLimitCount": "0",
+        "maxPaxLimitCount": "0",
+        "useMinPurchasePrice": false,
+        "allPaymentType": false,
+        "couponPaymentTypeList": [
+          {
+            "paymentType": "ALL",
+            "paymentMethod": "ALL"
+          }
+        ],
+        "tripCategoryCode": "",
+        "brandedFareBookingClassList": [
+          "FLX_Y",
+          "FLX_B",
+          "FLX_M",
+          "STD_S",
+          "STD_H",
+          "STD_E",
+          "STD_K",
+          "STD_L",
+          "SAV_L",
+          "STD_U",
+          "SAV_U",
+          "STD_Q",
+          "SAV_Q"
+        ]
+      },
+      "deepLink": "https://wwwdevt.koreanair.com/booking/search"
+    },
+    {
+      "available": false,
+      "prodCode": "PRSN",
+      "promotionId": "2503CDT90ALKR",
+      "couponCode": "2503CDT90ALKR000001",
+      "couponDescription": "준영차장님 쓰세요~",
+      "couponIssueDate": "20250319",
+      "couponType": "T",
+      "ownershipDep": "CDI",
+      "aliasName": "",
+      "couponDetailCondition": {
+        "domestic": false,
+        "deviceType": "A",
+        "applyCountryList": [],
+        "discountType": "R",
+        "discountRate": "90",
+        "discountAmount": "",
+        "discountCurrency": "",
+        "applyBookingClassList": [
+          "Y",
+          "B",
+          "M",
+          "S",
+          "H",
+          "E",
+          "K",
+          "L",
+          "L",
+          "U",
+          "U",
+          "Q",
+          "Q",
+          "T",
+          "T"
+        ],
+        "applyFareFamilyList": [],
+        "applyToKeFlight": true,
+        "excludeKeMarketCodeshare": true,
+        "applyDiscountCouponBoundList": [
+          {
+            "boundType": "O",
+            "includeBoundList": [
+              {
+                "departureArea": "ALL",
+                "arrivalArea": "ALL",
+                "departureAirport": "ALL",
+                "arrivalAirport": "ALL",
+                "includeFlightList": [],
+                "excludeFlightList": [
+                  {
+                    "carrierCode": "",
+                    "flightNumber": "",
+                    "toFlightNumber": ""
+                  }
+                ]
+              }
+            ],
+            "excludeBoundList": [],
+            "includeDeparturePeriodList": [
+              {
+                "periodType": "PERIOD",
+                "periodSubType": "",
+                "fromPeriodOfWithin": "",
+                "toPeriodOfWithin": "",
+                "periodOfBeforeAfter": "",
+                "fromDate": "20250319",
+                "toDate": "20251231"
+              }
+            ],
+            "excludeDeparturePeriodList": [],
+            "applyDayOfWeek": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": true,
+              "sat": true,
+              "sun": true
+            }
+          }
+        ],
+        "applyFromDateTime": "20250319000000",
+        "applyToDateTime": "20250331000059",
+        "availableUseCount": "UNLIMITTED",
+        "needLogin": true,
+        "beneficiaryInfo": {
+          "holder": false,
+          "family": false,
+          "personal": false
+        },
+        "usePaxLimit": false,
+        "minPaxLimitCount": "0",
+        "maxPaxLimitCount": "0",
+        "useMinPurchasePrice": false,
+        "allPaymentType": false,
+        "couponPaymentTypeList": [
+          {
+            "paymentType": "ALL",
+            "paymentMethod": "ALL"
+          }
+        ],
+        "tripCategoryCode": "",
+        "brandedFareBookingClassList": [
+          "FLX_Y",
+          "FLX_B",
+          "FLX_M",
+          "STD_S",
+          "STD_H",
+          "STD_E",
+          "STD_K",
+          "STD_L",
+          "SAV_L",
+          "STD_U",
+          "SAV_U",
+          "STD_Q",
+          "SAV_Q",
+          "STD_T",
+          "SAV_T"
+        ]
+      },
+      "deepLink": "https://wwwdevt.koreanair.com/booking/search"
+    },
+    {
+      "available": true,
+      "prodCode": "PRSN",
+      "promotionId": "2507CDT90ALK2",
+      "couponCode": "2507CDT90ALK2000001",
+      "couponDescription": "본인한정 테스트(우수회원)",
+      "couponIssueDate": "20250710",
+      "couponType": "T",
+      "ownershipDep": "CDI",
+      "aliasName": "",
+      "couponDetailCondition": {
+        "domestic": false,
+        "deviceType": "A",
+        "applyCountryList": [],
+        "discountType": "R",
+        "discountRate": "90",
+        "discountAmount": "",
+        "discountCurrency": "",
+        "applyBookingClassList": [
+          "Y",
+          "B",
+          "M",
+          "S",
+          "H",
+          "E",
+          "K",
+          "L",
+          "L",
+          "U",
+          "U",
+          "Q",
+          "Q",
+          "T",
+          "T"
+        ],
+        "applyFareFamilyList": [],
+        "applyToKeFlight": true,
+        "excludeKeMarketCodeshare": true,
+        "applyDiscountCouponBoundList": [
+          {
+            "boundType": "O",
+            "includeBoundList": [
+              {
+                "departureArea": "ALL",
+                "arrivalArea": "ALL",
+                "departureAirport": "ALL",
+                "arrivalAirport": "ALL",
+                "includeFlightList": [],
+                "excludeFlightList": [
+                  {
+                    "carrierCode": "",
+                    "flightNumber": "",
+                    "toFlightNumber": ""
+                  }
+                ]
+              }
+            ],
+            "excludeBoundList": [],
+            "includeDeparturePeriodList": [
+              {
+                "periodType": "PERIOD",
+                "periodSubType": "",
+                "fromPeriodOfWithin": "",
+                "toPeriodOfWithin": "",
+                "periodOfBeforeAfter": "",
+                "fromDate": "20250710",
+                "toDate": "20250930"
+              }
+            ],
+            "excludeDeparturePeriodList": [],
+            "applyDayOfWeek": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": true,
+              "sat": true,
+              "sun": true
+            }
+          }
+        ],
+        "applyFromDateTime": "20250710000000",
+        "applyToDateTime": "20250730000059",
+        "availableUseCount": "1",
+        "needLogin": true,
+        "beneficiaryInfo": {
+          "holder": false,
+          "family": false,
+          "personal": true
+        },
+        "usePaxLimit": false,
+        "minPaxLimitCount": "0",
+        "maxPaxLimitCount": "0",
+        "useMinPurchasePrice": false,
+        "allPaymentType": false,
+        "couponPaymentTypeList": [
+          {
+            "paymentType": "ALL",
+            "paymentMethod": "ALL"
+          }
+        ],
+        "tripCategoryCode": "",
+        "brandedFareBookingClassList": [
+          "FLX_Y",
+          "FLX_B",
+          "FLX_M",
+          "STD_S",
+          "STD_H",
+          "STD_E",
+          "STD_K",
+          "STD_L",
+          "SAV_L",
+          "STD_U",
+          "SAV_U",
+          "STD_Q",
+          "SAV_Q",
+          "STD_T",
+          "SAV_T"
+        ]
+      },
+      "deepLink": "https://wwwdevt.koreanair.com/booking/search"
+    },
+    {
+      "available": false,
+      "prodCode": "PRSN",
+      "promotionId": "2504CDT90ALKW",
+      "couponCode": "2504CDT90ALKW000001",
+      "couponDescription": "정률 쿠폰 테스트~ to 운이",
+      "couponIssueDate": "20250430",
+      "couponType": "T",
+      "ownershipDep": "CDI",
+      "aliasName": "",
+      "couponDetailCondition": {
+        "domestic": false,
+        "deviceType": "A",
+        "applyCountryList": [],
+        "discountType": "R",
+        "discountRate": "10",
+        "discountAmount": "",
+        "discountCurrency": "",
+        "applyBookingClassList": [
+          "Y",
+          "B",
+          "M",
+          "S",
+          "H",
+          "E",
+          "K",
+          "L",
+          "L",
+          "U",
+          "U",
+          "Q",
+          "Q"
+        ],
+        "applyFareFamilyList": [],
+        "applyToKeFlight": true,
+        "excludeKeMarketCodeshare": true,
+        "applyDiscountCouponBoundList": [
+          {
+            "boundType": "O",
+            "includeBoundList": [
+              {
+                "departureArea": "ALL",
+                "arrivalArea": "ALL",
+                "departureAirport": "ALL",
+                "arrivalAirport": "ALL",
+                "includeFlightList": [],
+                "excludeFlightList": [
+                  {
+                    "carrierCode": "",
+                    "flightNumber": "",
+                    "toFlightNumber": ""
+                  }
+                ]
+              }
+            ],
+            "excludeBoundList": [],
+            "includeDeparturePeriodList": [
+              {
+                "periodType": "AFTER",
+                "periodSubType": "ISSUE",
+                "fromPeriodOfWithin": "",
+                "toPeriodOfWithin": "",
+                "periodOfBeforeAfter": "365",
+                "fromDate": "20250430",
+                "toDate": "20260430"
+              }
+            ],
+            "excludeDeparturePeriodList": [],
+            "applyDayOfWeek": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": true,
+              "sat": true,
+              "sun": true
+            }
+          }
+        ],
+        "applyFromDateTime": "20250430152645",
+        "applyToDateTime": "20260430235959",
+        "availableUseCount": "UNLIMITTED",
+        "needLogin": true,
+        "beneficiaryInfo": {
+          "holder": false,
+          "family": false,
+          "personal": false
+        },
+        "usePaxLimit": false,
+        "minPaxLimitCount": "0",
+        "maxPaxLimitCount": "0",
+        "useMinPurchasePrice": false,
+        "allPaymentType": false,
+        "couponPaymentTypeList": [
+          {
+            "paymentType": "ALL",
+            "paymentMethod": "ALL"
+          }
+        ],
+        "tripCategoryCode": "",
+        "brandedFareBookingClassList": [
+          "FLX_Y",
+          "FLX_B",
+          "FLX_M",
+          "STD_S",
+          "STD_H",
+          "STD_E",
+          "STD_K",
+          "STD_L",
+          "SAV_L",
+          "STD_U",
+          "SAV_U",
+          "STD_Q",
+          "SAV_Q"
+        ]
+      },
+      "deepLink": "https://wwwdevt.koreanair.com/booking/search"
+    },
+    {
+      "available": true,
+      "prodCode": "PRSN",
+      "promotionId": "2502CDTNAALKH",
+      "couponCode": "2502CDTNAALKH000001",
+      "couponDescription": "(CDI) KRW_GIFTCARD 전용쿠폰 CPN TEST~",
+      "couponIssueDate": "20250218",
+      "couponType": "T",
+      "ownershipDep": "CDI",
+      "aliasName": "",
+      "couponDetailCondition": {
+        "domestic": false,
+        "deviceType": "A",
+        "applyCountryList": [],
+        "discountType": "A",
+        "discountRate": "",
+        "discountAmount": "20000.00",
+        "discountCurrency": "KRW",
+        "applyBookingClassList": [
+          "Y",
+          "B",
+          "M",
+          "S",
+          "H",
+          "E",
+          "K",
+          "L",
+          "L",
+          "U",
+          "U",
+          "Q",
+          "Q",
+          "T",
+          "T"
+        ],
+        "applyFareFamilyList": [],
+        "applyToKeFlight": true,
+        "excludeKeMarketCodeshare": true,
+        "applyDiscountCouponBoundList": [
+          {
+            "boundType": "O",
+            "includeBoundList": [
+              {
+                "departureArea": "ALL",
+                "arrivalArea": "ALL",
+                "departureAirport": "ALL",
+                "arrivalAirport": "ALL",
+                "includeFlightList": [],
+                "excludeFlightList": [
+                  {
+                    "carrierCode": "",
+                    "flightNumber": "",
+                    "toFlightNumber": ""
+                  }
+                ]
+              }
+            ],
+            "excludeBoundList": [],
+            "includeDeparturePeriodList": [
+              {
+                "periodType": "PERIOD",
+                "periodSubType": "",
+                "fromPeriodOfWithin": "",
+                "toPeriodOfWithin": "",
+                "periodOfBeforeAfter": "",
+                "fromDate": "20250218",
+                "toDate": "20251031"
+              }
+            ],
+            "excludeDeparturePeriodList": [],
+            "applyDayOfWeek": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": true,
+              "sat": true,
+              "sun": true
+            }
+          }
+        ],
+        "applyFromDateTime": "20250218000000",
+        "applyToDateTime": "20250331000059",
+        "availableUseCount": "UNLIMITTED",
+        "needLogin": true,
+        "beneficiaryInfo": {
+          "holder": false,
+          "family": false,
+          "personal": false
+        },
+        "usePaxLimit": false,
+        "minPaxLimitCount": "0",
+        "maxPaxLimitCount": "0",
+        "useMinPurchasePrice": false,
+        "allPaymentType": false,
+        "couponPaymentTypeList": [
+          {
+            "paymentType": "S18",
+            "paymentTypeDesc": "GIFTCARD",
+            "paymentMethod": "S18",
+            "paymentMethodDesc": "GIFTCARD"
+          }
+        ],
+        "tripCategoryCode": "",
+        "brandedFareBookingClassList": [
+          "FLX_Y",
+          "FLX_B",
+          "FLX_M",
+          "STD_S",
+          "STD_H",
+          "STD_E",
+          "STD_K",
+          "STD_L",
+          "SAV_L",
+          "STD_U",
+          "SAV_U",
+          "STD_Q",
+          "SAV_Q",
+          "STD_T",
+          "SAV_T"
+        ]
+      },
+      "deepLink": "https://wwwdevt.koreanair.com/booking/search"
+    },
+    {
+      "available": true,
+      "prodCode": "PRSN",
+      "promotionId": "2508CDTNAALK8",
+      "couponCode": "2508CDTNAALK8000001",
+      "couponDescription": "우수회원 쿠폰 테스트(CDI)",
+      "couponIssueDate": "20250808",
+      "couponType": "T",
+      "ownershipDep": "CDI",
+      "aliasName": "",
+      "couponDetailCondition": {
+        "domestic": false,
+        "deviceType": "A",
+        "applyCountryList": [],
+        "discountType": "A",
+        "discountRate": "",
+        "discountAmount": "500000.00",
+        "discountCurrency": "KRW",
+        "applyBookingClassList": [
+          "Y",
+          "B",
+          "M",
+          "S",
+          "H",
+          "E",
+          "K",
+          "L",
+          "L",
+          "U",
+          "U",
+          "Q",
+          "Q",
+          "T",
+          "T"
+        ],
+        "applyFareFamilyList": [],
+        "applyToKeFlight": true,
+        "excludeKeMarketCodeshare": true,
+        "applyDiscountCouponBoundList": [
+          {
+            "boundType": "O",
+            "includeBoundList": [
+              {
+                "departureArea": "ALL",
+                "arrivalArea": "ALL",
+                "departureAirport": "ALL",
+                "arrivalAirport": "ALL",
+                "includeFlightList": [],
+                "excludeFlightList": [
+                  {
+                    "carrierCode": "",
+                    "flightNumber": "",
+                    "toFlightNumber": ""
+                  }
+                ]
+              }
+            ],
+            "excludeBoundList": [],
+            "includeDeparturePeriodList": [
+              {
+                "periodType": "PERIOD",
+                "periodSubType": "",
+                "fromPeriodOfWithin": "",
+                "toPeriodOfWithin": "",
+                "periodOfBeforeAfter": "",
+                "fromDate": "20250808",
+                "toDate": "20250930"
+              }
+            ],
+            "excludeDeparturePeriodList": [],
+            "applyDayOfWeek": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": true,
+              "sat": true,
+              "sun": true
+            }
+          }
+        ],
+        "applyFromDateTime": "20250808000000",
+        "applyToDateTime": "20250930000059",
+        "availableUseCount": "1",
+        "needLogin": true,
+        "beneficiaryInfo": {
+          "holder": false,
+          "family": false,
+          "personal": true
+        },
+        "usePaxLimit": false,
+        "minPaxLimitCount": "0",
+        "maxPaxLimitCount": "0",
+        "useMinPurchasePrice": false,
+        "allPaymentType": false,
+        "couponPaymentTypeList": [
+          {
+            "paymentType": "ALL",
+            "paymentMethod": "ALL"
+          }
+        ],
+        "tripCategoryCode": "",
+        "brandedFareBookingClassList": [
+          "FLX_Y",
+          "FLX_B",
+          "FLX_M",
+          "STD_S",
+          "STD_H",
+          "STD_E",
+          "STD_K",
+          "STD_L",
+          "SAV_L",
+          "STD_U",
+          "SAV_U",
+          "STD_Q",
+          "SAV_Q",
+          "STD_T",
+          "SAV_T"
+        ]
+      },
+      "deepLink": "https://wwwdevt.koreanair.com/booking/search"
+    },
+    {
+      "available": false,
+      "prodCode": "PRSN",
+      "promotionId": "2506CMTNAHLMV",
+      "couponCode": "2506CMTNAHLMV000001",
+      "couponDescription": "100회 탑승 test",
+      "couponIssueDate": "20250620",
+      "couponType": "T",
+      "ownershipDep": "CMS",
+      "aliasName": "",
+      "couponDetailCondition": {
+        "domestic": false,
+        "deviceType": "A",
+        "applyCountryList": [],
+        "discountType": "A",
+        "discountRate": "",
+        "discountAmount": "100000.00",
+        "discountCurrency": "KRW",
+        "applyBookingClassList": [
+          "F",
+          "J",
+          "C",
+          "D",
+          "I",
+          "R",
+          "Y",
+          "B",
+          "M",
+          "S",
+          "H",
+          "E",
+          "K",
+          "L",
+          "L",
+          "U",
+          "U",
+          "Q",
+          "Q",
+          "T",
+          "T"
+        ],
+        "applyFareFamilyList": [],
+        "applyToKeFlight": true,
+        "excludeKeMarketCodeshare": false,
+        "applyDiscountCouponBoundList": [
+          {
+            "boundType": "O",
+            "includeBoundList": [
+              {
+                "departureArea": "ALL",
+                "arrivalArea": "ALL",
+                "departureAirport": "ALL",
+                "arrivalAirport": "ALL",
+                "includeFlightList": [],
+                "excludeFlightList": [
+                  {
+                    "carrierCode": "",
+                    "flightNumber": "",
+                    "toFlightNumber": ""
+                  }
+                ]
+              }
+            ],
+            "excludeBoundList": [],
+            "includeDeparturePeriodList": [
+              {
+                "periodType": "AFTER",
+                "periodSubType": "ISSUE",
+                "fromPeriodOfWithin": "",
+                "toPeriodOfWithin": "",
+                "periodOfBeforeAfter": "730",
+                "fromDate": "20250620",
+                "toDate": "20270620"
+              }
+            ],
+            "excludeDeparturePeriodList": [],
+            "applyDayOfWeek": {
+              "mon": true,
+              "tue": true,
+              "wed": true,
+              "thu": true,
+              "fri": true,
+              "sat": true,
+              "sun": true
+            }
+          }
+        ],
+        "applyFromDateTime": "20250620000000",
+        "applyToDateTime": "20250630000059",
+        "availableUseCount": "1",
+        "needLogin": true,
+        "beneficiaryInfo": {
+          "holder": true,
+          "family": false,
+          "personal": false
+        },
+        "usePaxLimit": true,
+        "minPaxLimitCount": "1",
+        "maxPaxLimitCount": "1",
+        "useMinPurchasePrice": false,
+        "allPaymentType": false,
+        "couponPaymentTypeList": [
+          {
+            "paymentType": "ALL",
+            "paymentMethod": "ALL"
+          }
+        ],
+        "tripCategoryCode": "",
+        "brandedFareBookingClassList": [
+          "FPR_F",
+          "PLX_J",
+          "PLS_C",
+          "PTD_D",
+          "PTD_I",
+          "PTD_R",
+          "FLX_Y",
+          "FLX_B",
+          "FLX_M",
+          "STD_S",
+          "STD_H",
+          "STD_E",
+          "STD_K",
+          "SAV_L",
+          "STD_L",
+          "SAV_U",
+          "STD_U",
+          "STD_Q",
+          "SAV_Q",
+          "SAV_T",
+          "STD_T"
+        ]
+      },
+      "deepLink": "https://wwwdevt.koreanair.com/booking/search"
+    }
+  ]
+}

@@ -1,12 +1,27 @@
-describe('Korean Air Test', function() {
-  beforeEach(function() {
+describe('Korean Air Test', () => {
+  beforeEach(() => {
+    // 1. Visit the website and get translated text using cy.interCeptTranslate()
     cy.visit('wwwdevt.koreanair.com');
-    // 커스텀 커맨드인 cy.handleCookie()를 호출해서 쿠키 배너를 닫아줍니다.
+    cy.interCeptTranslate();
+
+    // 2. Close cookie banner using cy.handleCookie()
     cy.handleCookie();
+
+    // 3. Login using cy.handleLogin()
+    cy.handleLogin('kalmanpay', 'selcdi2024!');
   });
 
-  it('Login Test', function() {
-    // 커스텀 커맨드인 cy.hangleLogin('kalmanpay', 'selcdi2024!')를 호출해서 로그인합니다.
-    cy.handleLogin('kalmanpay', 'selcdi2024!');
+  it('Sets destination, date, cabin class and searches for booking', () => {
+    // 4. Set destination using cy.handleDestination()
+    cy.handleDestination('NRT');
+
+    // 5. Set date using cy.handleDate()
+    cy.handleDate('20250830', '20250904');
+
+    // 6. Set cabin class using cy.handleCabinClass()
+    cy.handleCabinClass('P');
+
+    // 7. Search for booking using cy.handleBookingSearch()
+    cy.handleBookingSearch();
   });
 });

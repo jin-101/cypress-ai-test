@@ -1,0 +1,81 @@
+{
+  "plccCouponList": [
+    {
+      "cpnAmt": "130000",
+      "cpnUsable": "Y",
+      "cpnUsage": "REVIVAL",
+      "cpnSeq": 4,
+      "cpnNbr": "HDPL2506010000000001",
+      "brandCode": "LA",
+      "prodCode": "HDPL",
+      "validStartDate": "20250601",
+      "validEndDate": "20261231"
+    },
+    {
+      "cpnAmt": "50000",
+      "cpnUsable": "Y",
+      "cpnUsage": "REVIVAL",
+      "cpnSeq": 18,
+      "cpnNbr": "HDPL2501061486896801",
+      "brandCode": "LA",
+      "prodCode": "HDPL",
+      "validStartDate": "20250106",
+      "validEndDate": "20251231"
+    },
+    {
+      "cpnAmt": "100000",
+      "cpnUsable": "Y",
+      "cpnUsage": "REVIVAL",
+      "cpnSeq": 17,
+      "cpnNbr": "HDPL2501061486484846",
+      "brandCode": "LA",
+      "prodCode": "HDPL",
+      "validStartDate": "20250106",
+      "validEndDate": "20250901"
+    },
+    {
+      "cpnAmt": "50000",
+      "cpnUsable": "Y",
+      "cpnUsage": "REVIVAL",
+      "cpnSeq": 1,
+      "cpnNbr": "HDPL2406186923000718",
+      "brandCode": "LA",
+      "prodCode": "HDPL",
+      "validStartDate": "20240618",
+      "validEndDate": "20251231"
+    },
+    {
+      "cpnAmt": "50000",
+      "cpnUsable": "Y",
+      "cpnUsage": "ISSUE",
+      "cpnSeq": 4,
+      "cpnNbr": "HDPL2406186923116361",
+      "brandCode": "LD",
+      "prodCode": "HDPL",
+      "validStartDate": "20240618",
+      "validEndDate": "20251231"
+    },
+    {
+      "cpnAmt": "50000",
+      "cpnUsable": "Y",
+      "cpnUsage": "ISSUE",
+      "cpnSeq": 2,
+      "cpnNbr": "HDPL2406186923039530",
+      "brandCode": "LB",
+      "prodCode": "HDPL",
+      "validStartDate": "20240618",
+      "validEndDate": "20251231"
+    },
+    {
+      "cpnAmt": "50000",
+      "cpnUsable": "Y",
+      "cpnUsage": "ISSUE",
+      "cpnSeq": 3,
+      "cpnNbr": "HDPL2406186923075533",
+      "brandCode": "LC",
+      "prodCode": "HDPL",
+      "validStartDate": "20240618",
+      "validEndDate": "20251231"
+    }
+  ]
+}

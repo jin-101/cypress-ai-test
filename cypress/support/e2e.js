@@ -15,3 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+
+// Cypress Testing Library를 사용하기 위해 import 합니다.
+// 이 구문을 추가하면 cy.findByRole, cy.findByText 등의 명령어를 사용할 수 있습니다.
+import '@testing-library/cypress/add-commands'
