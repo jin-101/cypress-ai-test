@@ -1,14 +1,4 @@
-function dateFixNumber(date) {
-  if(date[0] === '0') return date.substring(1);
-  else return date
-}
-
-function cabinClass (cabin) {
-  console.error('cabinClass',Cypress.env('translate'))
-  if(cabin === 'P') return new RegExp(`${Cypress.env('translate').W000470}`, 'i');
-  else if(cabin === 'F') return new RegExp(`${Cypress.env('translate').W000471}`, 'i');
-  else return new RegExp(`${Cypress.env('translate').W000469}`, 'i');
-}
+import { dateFixNumber, getCabinClassRegex } from './utils/helpers';
 
 // ***********************************************
 // This example commands.js shows you how to
@@ -120,7 +110,7 @@ Cypress.Commands.add('handleCabinClass', (cabin, options = {}) => {
       .click();
   cy.get('.seatclass.-main-quick',{timeout})
       .should('exist')
-      .contains(cabinClass(cabin))
+      .contains(getCabinClassRegex(cabin))
       .click();
 });
 

@@ -1,11 +1,4 @@
-const myData = {
-  id : 'testpayment',
-  pw : 'selcdi2024!',
-  arrival:'NRT',
-  departureDate : '20250830',
-  arrivalDate : '20250904',
-  cabin : 'P'
-}
+import { USER_DATA, FLIGHT_INFO } from '../support/utils/constants';
 
 describe('Korean Air Test', function() {
   beforeEach(function() {
@@ -31,19 +24,19 @@ describe('Korean Air Test', function() {
     // 커스텀 커맨드인 cy.handleCookie()를 호출해서 쿠키 배너를 닫아줍니다.
     cy.handleCookie();
     // 커스텀 커맨드인 cy.hangleLogin('kalmanpay', 'selcdi2024!')를 호출해서 로그인합니다.
-    cy.handleLogin('testpayment', 'selcdi2024!');
+    cy.handleLogin(USER_DATA.PAYMENT.id, USER_DATA.PAYMENT.pw);
   });
 
   it('Test', function() {
 
     //커스텀 커맨드인 cy.handleDestination를 호출해서 도착지를 선택합니다.
-    cy.handleDestination(myData.arrival);
+    cy.handleDestination(FLIGHT_INFO.NRT.arrival);
 
     //커스텀 커맨드인 cy.handleDate를 호출해서 날짜를 선택합니다.
-    cy.handleDate(myData.departureDate, myData.arrivalDate);
+    cy.handleDate(FLIGHT_INFO.NRT.departureDate, FLIGHT_INFO.NRT.arrivalDate);
 
     //커스텀 커맨드인 cy.handleCabinClass를 호출해서 좌석등급을 선택합니다.
-    cy.handleCabinClass(myData.cabin);
+    cy.handleCabinClass(FLIGHT_INFO.NRT.cabin);
 
     //커스텀 커맨드인 cy.handleBookingSearch를 호출해서 검색합니다.
     cy.handleBookingSearch();
