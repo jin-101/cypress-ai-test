@@ -5,7 +5,7 @@ describe('Korean Air Test', function() {
     // 커스텀 커맨드인 cy.interCeptTranslate()를 호출해서 다국어 가져오기
     cy.interCeptTranslate();
     // 사이트 접속
-    cy.visit('wwwdevt.koreanair.com');
+    cy.visit(Cypress.env('baseUrl'));
     // 커스텀 커맨드인 cy.handleCookie()를 호출해서 쿠키 배너를 닫아줍니다.
     cy.handleCookie();
     // 커스텀 커맨드인 cy.hangleLogin('kalmanpay', 'selcdi2024!')를 호출해서 로그인합니다.
