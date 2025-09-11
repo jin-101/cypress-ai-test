@@ -11,9 +11,9 @@ const strictPrompt = `너는 Cypress 테스트 코드만 작성하는 AI야. 아
 1. wwwdevt.koreanair.com 사이트를 방문해. 이때 커스텀 커맨드인 cy.interCeptTranslate()를 호출해서 다국어 가져와.
 2. 커스텀 커맨드인 cy.handleCookieBanner를 호출해서 쿠키 배너를 닫아줘.
 3. 커스텀 커맨드인 cy.handleLogin를 호출해서 로그인해줘. parameter를 설정할 떄, id는 kalmanpay, password는 selcdi2024!로 해줘.
-4. 커스텀 커맨드인 cy.handleDestination를 호출해서 도착지를 설정해줘. 도착지는 NRT로 해줘.
-5. 커스텀 커맨드인 cy.handleDate를 호출해서 출도착 일자를 설정해줘. 출발일자는 20250830,도착일자는 20250904로 해줘.
-6. 커스텀 커맨드인 cy.handleCabinClass를 호출해서 좌석등급을 설정해줘. 등급은 P로 해줘
+4. 커스텀 커맨드인 cy.setQuickDestination를 호출해서 도착지를 설정해줘. 도착지는 NRT로 해줘.
+5. 커스텀 커맨드인 cy.setQuickDate를 호출해서 출도착 일자를 설정해줘. 출발일자는 20250830,도착일자는 20250904로 해줘.
+6. 커스텀 커맨드인 cy.setQuickClass를 호출해서 좌석등급을 설정해줘. 등급은 P로 해줘
 7. 커스텀 커맨드인 cy.handleBookingSearch를 호출해서 항공권을 검색해줘.
 `;
 

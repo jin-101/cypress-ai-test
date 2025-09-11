@@ -17,11 +17,11 @@ describe('Korean Air Test', function() {
     //커스텀 커맨드인 cy.setQuickDestination를 호출해서 도착지를 선택합니다.
     cy.setQuickDestination({arrival:FLIGHT_INFO.arrival});
 
-    //커스텀 커맨드인 cy.handleDate를 호출해서 날짜를 선택합니다.
-    cy.handleDate({departureDate:FLIGHT_INFO.departureDate, arrivalDate: FLIGHT_INFO.arrivalDate});
+    //커스텀 커맨드인 cy.setQuickDate를 호출해서 날짜를 선택합니다.
+    cy.setQuickDate({departureDate:FLIGHT_INFO.departureDate, arrivalDate: FLIGHT_INFO.arrivalDate});
 
-    //커스텀 커맨드인 cy.handleCabinClass를 호출해서 좌석등급을 선택합니다.
-    cy.handleCabinClass({cabin: FLIGHT_INFO.cabin});
+    //커스텀 커맨드인 cy.setQuickClass를 호출해서 좌석등급을 선택합니다.
+    cy.setQuickClass({cabin: FLIGHT_INFO.cabin});
 
     //커스텀 커맨드인 cy.handleBookingSearch를 호출해서 검색합니다.
     cy.handleBookingSearch();

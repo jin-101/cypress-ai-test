@@ -105,7 +105,7 @@ Cypress.Commands.add('setQuickDestination', (params, options = {}) => {
   }
 });
 
-Cypress.Commands.add('handleDate', (params, options = {}) => {
+Cypress.Commands.add('setQuickDate', (params, options = {}) => {
   const { departureDate, arrivalDate } = params;
   const { timeout = 200000 } = options;
   const now = getTodayDate();
@@ -113,7 +113,7 @@ Cypress.Commands.add('handleDate', (params, options = {}) => {
     (!!departureDate && Number(now) <= Number(departureDate)) && 
     (Number(departureDate) <= Number(arrivalDate) || !arrivalDate)
   ){
-    cy.log(`handleDate --- departureDate: '${departureDate}', arrivalDate: '${arrivalDate}'`);
+    cy.log(`setQuickDate --- departureDate: '${departureDate}', arrivalDate: '${arrivalDate}'`);
     selectDate([departureDate,arrivalDate].filter(arr => !!arr), timeout);
   } else {
      cy.log(`error --- 날짜를 확인해주세요.: '${departureDate}', arrivalDate: '${arrivalDate}'`);
@@ -121,12 +121,12 @@ Cypress.Commands.add('handleDate', (params, options = {}) => {
 });
 
 
-Cypress.Commands.add('handleCabinClass', (params, options = {}) => {
+Cypress.Commands.add('setQuickClass', (params, options = {}) => {
   const { cabin } = params;
   const { timeout = 200000 } = options;
 
   if(cabin){
-    cy.log(`handleCabinClass --- cabin: '${cabin}'`);
+    cy.log(`setQuickClass --- cabin: '${cabin}'`);
     //좌석 등급
     cy.get('ke-main-quick-booking-ow-rt',{timeout})
       .find(`kds-class${versionSuffix}`, {timeout:timeout})

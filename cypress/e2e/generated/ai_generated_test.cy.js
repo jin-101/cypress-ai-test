@@ -13,11 +13,11 @@ describe('Cypress Test Scenario', () => {
     // 4. Set the destination using cy.handleDestination()
     cy.handleDestination('NRT');
 
-    // 5. Set the travel dates using cy.handleDate()
-    cy.handleDate({ departureDate: '20250830', arrivalDate: '20250904' });
+    // 5. Set the travel dates using cy.setQuickDate()
+    cy.setQuickDate({ departureDate: '20250830', arrivalDate: '20250904' });
 
-    // 6. Set the cabin class using cy.handleCabinClass()
-    cy.handleCabinClass('P');
+    // 6. Set the cabin class using cy.setQuickClass()
+    cy.setQuickClass('P');
 
     // 7. Search for booking using cy.handleBookingSearch()
     cy.handleBookingSearch();
