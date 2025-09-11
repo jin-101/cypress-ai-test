@@ -1,19 +1,18 @@
 export const USER_DATA = {
   PAYMENT: {
     id: 'testpayment',
-    pw: 'selcdi2024!',
+    password: 'selcdi2024!',
   },
   KALMAN: {
     id: 'kalmanpay',
-    pw: 'selcdi2024!',
+    password: 'selcdi2024!',
   }
 };
 
 export const FLIGHT_INFO = {
-  NRT: {
-    arrival: 'NRT',
-    departureDate: '20250830',
-    arrivalDate: '20250904',
-    cabin: 'P'
-  }
+  departure: 'LAX',
+  arrival: 'NRT',
+  departureDate: '20250915',
+  arrivalDate: '20250925',
+  cabin: 'Y'
 };

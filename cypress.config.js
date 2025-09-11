@@ -4,13 +4,18 @@ module.exports = defineConfig({
     language : 'ko',
     baseUrl : 'https://wwwdevt.koreanair.com',
     translateApiCommonPath : '/api/et/uiCommon/c/i/languageInfo',
-    translate: {}
+    translate: {},
+    wdsCapsuleVersion : 1
   },
   e2e: {
     // viewport는 여기서 설정
     viewportWidth: 1280,
     viewportHeight: 1000,
     includeShadowDom: true,
+    // 페이지 로드 타임아웃을 60초에서 120초(120000ms)로 늘립니다.
+    // 개발 서버 응답이 느리거나 네트워크 상태가 좋지 않을 때 타임아웃 오류를 방지합니다.
+    // https://docs.cypress.io/guides/references/configuration#Timeouts
+    pageLoadTimeout: 120000,
     setupNodeEvents(on, config) {
       on("task", {
         // Ollama를 호출하여 프롬프트에 맞는 Cypress 테스트 코드를 생성하는 task

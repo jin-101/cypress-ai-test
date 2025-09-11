@@ -1,24 +1,22 @@
-describe('Korean Air Test', () => {
+describe('Cypress Test Scenario', () => {
   beforeEach(() => {
-    // 1. Visit the website and get translated text using cy.interCeptTranslate()
+    // 1. Visit the website and get the translated text using cy.interCeptTranslate()
     cy.visit('wwwdevt.koreanair.com');
     cy.interCeptTranslate();
 
-    // 2. Close cookie banner using cy.handleCookie()
-    cy.handleCookie();
+    // 2. Close the cookie banner using cy.handleCookieBanner()
+    cy.handleCookieBanner();
 
-    // 3. Login using cy.handleLogin()
-    cy.handleLogin('kalmanpay', 'selcdi2024!');
-  });
+    // 3. Login using cy.handleLogin() with provided parameters
+    cy.handleLogin({ id: 'kalmanpay', password: 'selcdi2024!' });
 
-  it('Sets destination, date, cabin class and searches for booking', () => {
-    // 4. Set destination using cy.handleDestination()
+    // 4. Set the destination using cy.handleDestination()
     cy.handleDestination('NRT');
 
-    // 5. Set date using cy.handleDate()
-    cy.handleDate('20250830', '20250904');
+    // 5. Set the travel dates using cy.handleDate()
+    cy.handleDate({ departureDate: '20250830', arrivalDate: '20250904' });
 
-    // 6. Set cabin class using cy.handleCabinClass()
+    // 6. Set the cabin class using cy.handleCabinClass()
     cy.handleCabinClass('P');
 
     // 7. Search for booking using cy.handleBookingSearch()

@@ -7,10 +7,10 @@ describe("AI Test Generator", () => {
     // 2. AI에게 명확한 역할과 규칙을 부여하여 코드만 생성하도록 유도합니다.
     // AI가 학습한 일반적인 패턴으로 회귀하는 것을 막기 위해, 훨씬 더 구체적이고 명령적인 프롬프트를 사용합니다.
 const strictPrompt = `너는 Cypress 테스트 코드만 작성하는 AI야. 아래의 주의사항을 지키면서 각 단계에 맞는 테스트 시나리오를 다음 단계에 맞게 만들어줘.
-(주의사항, 커스텀 커맨드를 사용하라고 하면 반드시 commands.js에 있는 함수를 사용해줘. 검증과 관련된 코드는 만들지마. 1~3단계는 하나의 beforeEach에 만들고, 4~마지막 단계까지는 하나의 it안에 만들어줘.)
+(주의사항, 커스텀 커맨드를 사용하라고 하면 반드시 commands.js에 있는 함수를 사용하고, 각 커스텀 커멘드의 인자는 내가 설정해준 값과 유사한 것을 찾아서 넘겨줘. 검증과 관련된 코드는 만들지마. 1~3단계는 하나의 beforeEach에 만들고, 4~마지막 단계까지는 하나의 it안에 만들어줘.)
 1. wwwdevt.koreanair.com 사이트를 방문해. 이때 커스텀 커맨드인 cy.interCeptTranslate()를 호출해서 다국어 가져와.
-2. 커스텀 커맨드인 cy.handleCookie를 호출해서 쿠키 배너를 닫아줘.
-3. 커스텀 커맨드인 cy.hangleLogin를 호출해서 로그인해줘. id는 kalmanpay, pw는 selcdi2024!로 해줘.
+2. 커스텀 커맨드인 cy.handleCookieBanner를 호출해서 쿠키 배너를 닫아줘.
+3. 커스텀 커맨드인 cy.handleLogin를 호출해서 로그인해줘. parameter를 설정할 떄, id는 kalmanpay, password는 selcdi2024!로 해줘.
 4. 커스텀 커맨드인 cy.handleDestination를 호출해서 도착지를 설정해줘. 도착지는 NRT로 해줘.
 5. 커스텀 커맨드인 cy.handleDate를 호출해서 출도착 일자를 설정해줘. 출발일자는 20250830,도착일자는 20250904로 해줘.
 6. 커스텀 커맨드인 cy.handleCabinClass를 호출해서 좌석등급을 설정해줘. 등급은 P로 해줘

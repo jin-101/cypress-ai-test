@@ -29,3 +29,7 @@ export function getCabinClassRegex(cabin) {
   return new RegExp(cabinMap[cabinKey], 'i');
 }
 
+
+export function getTodayDate(){
+  return new Date().toISOString().slice(0, 10).replace(/-/g, '');
+}
