@@ -1,3 +1,152 @@
 {
-  "promotionList": null
+    "promotionList": [
+        {
+            "paymentTypeCode": "KAKAO",
+            "paymentDetailType": "S06",
+            "message": "<span class=\"payment-promotion__title\">카카오페이로 결제 시 최대 1만원 추가 할인!</span>\r\n카카오페이로 결제 시, 카카오페이 결제창에서 결제 금액에 따라 결제창에서 즉시 할인을 받으세요. <br>\r\n30만원 이상 3천원, 50만원 이상 5천원, 100만원 이상 1만원 즉시 할인 제공! <br>\r\n* 국제선 전 노선 대상 (마일리지 항공권 제외). 할인 횟수 제한 없음",
+            "promotionUrl": "",
+            "promotionLogoUrl": "/content/dam/koreanair/promotion/list/2025/03/mainevent/kakao_ev/kakao_logo.png",
+            "promotionId": "2508CSANAALKB",
+            "priority": "2",
+            "startDate": "202508181000",
+            "endDate": "202509282359",
+            "lang": "[\"KO\"]",
+            "country": "[\"KR\"]",
+            "payPromotionId": "310",
+            "depStartDate": null,
+            "depEndDate": null,
+            "aliasName": "K2509PAYDIS",
+            "couponDescription": "카카오페이 국제선 전노선 결제 할인 25.8.18~9.28",
+            "couponDetailCondition": {
+                "domestic": false,
+                "deviceType": "A",
+                "applyCountryList": [],
+                "discountType": "A",
+                "discountRate": "",
+                "discountAmount": "10.00",
+                "discountCurrency": "KRW",
+                "applyBookingClassList": [
+                    "J",
+                    "C",
+                    "D",
+                    "I",
+                    "R",
+                    "Y",
+                    "B",
+                    "M",
+                    "S",
+                    "H",
+                    "E",
+                    "K",
+                    "L",
+                    "L",
+                    "U",
+                    "U",
+                    "Q",
+                    "Q",
+                    "T",
+                    "T",
+                    "V",
+                    "V",
+                    "W",
+                    "W"
+                ],
+                "applyFareFamilyList": [],
+                "applyToKeFlight": true,
+                "excludeKeMarketCodeshare": true,
+                "applyDiscountCouponBoundList": [
+                    {
+                        "boundType": "O",
+                        "includeBoundList": [
+                            {
+                                "departureArea": "KOR",
+                                "arrivalArea": "ALL",
+                                "departureAirport": "ALL",
+                                "arrivalAirport": "ALL",
+                                "includeFlightList": [],
+                                "excludeFlightList": [
+                                    {
+                                        "carrierCode": "",
+                                        "flightNumber": "",
+                                        "toFlightNumber": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "excludeBoundList": [],
+                        "includeDeparturePeriodList": [
+                            {
+                                "periodType": "PERIOD",
+                                "periodSubType": "",
+                                "fromPeriodOfWithin": "",
+                                "toPeriodOfWithin": "",
+                                "periodOfBeforeAfter": "",
+                                "fromDate": "20250818",
+                                "toDate": "20260228"
+                            }
+                        ],
+                        "excludeDeparturePeriodList": [],
+                        "applyDayOfWeek": {
+                            "mon": true,
+                            "tue": true,
+                            "wed": true,
+                            "thu": true,
+                            "fri": true,
+                            "sat": true,
+                            "sun": true
+                        }
+                    }
+                ],
+                "applyFromDateTime": "20250915152759",
+                "availableUseCount": "UNLIMITTED",
+                "needLogin": true,
+                "beneficiaryInfo": {
+                    "holder": false,
+                    "family": false,
+                    "personal": false
+                },
+                "usePaxLimit": false,
+                "minPaxLimitCount": "0",
+                "maxPaxLimitCount": "0",
+                "useMinPurchasePrice": false,
+                "allPaymentType": false,
+                "couponPaymentTypeList": [
+                    {
+                        "paymentType": "S06",
+                        "paymentTypeDesc": "KAKAO",
+                        "paymentMethod": "S06",
+                        "paymentMethodDesc": "KakaoPay"
+                    }
+                ],
+                "tripCategoryCode": "",
+                "brandedFareBookingClassList": [
+                    "PLX_J",
+                    "PLS_C",
+                    "PTD_D",
+                    "PTD_I",
+                    "PTD_R",
+                    "FLX_Y",
+                    "FLX_B",
+                    "FLX_M",
+                    "STD_S",
+                    "STD_H",
+                    "STD_E",
+                    "STD_K",
+                    "SAV_L",
+                    "STD_L",
+                    "SAV_U",
+                    "STD_U",
+                    "SAV_Q",
+                    "STD_Q",
+                    "SAV_T",
+                    "STD_T",
+                    "PEF_V",
+                    "PES_V",
+                    "PEF_W",
+                    "PES_W"
+                ]
+            },
+            "promotionBannerOnlyYn": "Y"
+        }
+    ]
 }

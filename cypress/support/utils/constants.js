@@ -10,9 +10,9 @@ export const USER_DATA = {
 };
 
 export const FLIGHT_INFO = {
-  departure: 'LAX',
+  departure: 'SEL',
   arrival: 'NRT',
-  departureDate: '20250915',
-  arrivalDate: '20250925',
+  departureDate: '20250925',
+  arrivalDate: '20250930',
   cabin: 'Y'
 };
