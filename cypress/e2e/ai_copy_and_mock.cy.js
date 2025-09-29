@@ -1,4 +1,4 @@
-import { USER_DATA, FLIGHT_INFO } from '../support/utils/constants';
+import { USER_DATA, STEP1_INFO, STEP2_INFO } from '../support/utils/constants';
 
 describe('Korean Air Test', function() {
   beforeEach(function() {
@@ -93,7 +93,7 @@ describe('Korean Air Test', function() {
       // cy.waitForLoadingComplete(10000) // 로딩 화면이 사라질 때까지 대기
       cy.log('step3 시작')
       cy.setPassengerInformation({
-        info: FLIGHT_INFO
+        info: STEP1_INFO
       });
       cy.handleCheckAgree({
         agreeIndex: ['1', '3']
