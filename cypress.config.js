@@ -5,6 +5,7 @@ module.exports = defineConfig({
     baseUrl : 'https://wwwdevt.koreanair.com',
     translateApiCommonPath : '/api/et/uiCommon/c/i/languageInfo',
     translate: {},
+    isLogin: false,
     wdsCapsuleVersion : 1
   },
   e2e: {

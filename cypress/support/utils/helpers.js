@@ -23,10 +23,10 @@ export function getCabinClassRegex(cabin) {
     P: translations.W000470 || 'Prestige',
     F: translations.W000471 || 'First',
     Y: translations.W000469 || 'Economy', // 일반석에 대한 표준 코드 'Y'를 추가합니다.
+    ALL: translations.W010038 || 'All Class',
   };
 
-  const cabinKey = ['P', 'F'].includes(cabin) ? cabin : 'Y';
-  return new RegExp(cabinMap[cabinKey], 'i');
+    return new RegExp(cabinMap[cabin], 'i');
 }
 
 

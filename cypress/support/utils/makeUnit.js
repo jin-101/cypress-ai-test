@@ -67,3 +67,77 @@ export function selectAirport (type, airportCode, timeout = 200000) {
             .click();
     });
   }
+
+  /**
+   * 항공편을 선택하는 내부 헬퍼 함수입니다.
+   * @param {'String'} findCabinName - 세부 클래스 선택
+   * @param {'Number'} n - 세부 클래스 중 n번째 항공편 선택 (매진 제외)
+   * @param {'String'} buttonType - 세부 클래스 선택 후 다음으로 진행하기 위한 버튼 종류 (next | next2 | guest | login)
+   * 
+   */
+  export function selectFlight(findCabinName, n, buttonType, timeout = 200000){
+    cy.log('selectFlight params : (findCabinName: ' + findCabinName + ' n: ' + n + ' buttonType: ' +  buttonType)
+    const disabledClass = 'span.flight-n__disabled';
+    const cabinNameClass = 'span.flight-n__cabin-name';
+    let btnText; 
+
+    switch (buttonType) {
+      case 'next':
+        btnText = Cypress.env('translate').W000907
+        break;
+      case 'next2': // step3 진입 바로 전 '다음' 버튼
+        btnText = Cypress.env('translate').W000365
+        break;
+      case 'Guest':
+        btnText = Cypress.env('translate').W000169
+        break;
+      case 'login':
+        btnText = Cypress.env('translate').W000170
+        break;
+      default:
+        btnText = ''
+    }
+
+    cy.get('ke-revenue-flight-item', { timeout })
+        .should('exist')
+        .then(($items) => {
+          return cy.wrap(
+            $items.filter((_, el) => {
+              const $el = Cypress.$(el)
+              try {
+                // disabled 클래스를 가진 span이 없는지 확인
+                const isNotDisabled = $el.find(disabledClass).length === 0
+                // cabin-name span의 텍스트가 일치하는지 확인 flight-n__cabin-name
+                const cabinNameMatch = $el.find(cabinNameClass).text().trim() === findCabinName; 
+                return isNotDisabled && cabinNameMatch
+              } catch (error) {
+                cy.log('항목 필터링 중 오류 발생:', error)
+                return false
+              }
+            })
+          )
+        })
+        .should(($filteredItems) => {
+          // 결과가 있는지 확인
+          expect($filteredItems.length).to.be.at.least(1, '조건에 맞는 항목이 최소 1개 이상 있어야 합니다')
+        })
+        .then(($matchedItems) => {
+          // 찾은 항목들에 대한 추가 작업
+          cy.wrap($matchedItems).eq(n)  // n 번째 매칭된 항목 선택
+            .should('be.visible')
+            .and('not.have.descendants', disabledClass)
+            .find(cabinNameClass)
+            .contains(findCabinName)
+            .click();
+        });
+
+        if(!!btnText){
+          cy.get('ke-revenue-payment-widget', { timeout })
+              .should('exist')
+              .find('button.payment-widget__confirm')
+              .contains(btnText)
+              .click();
+        } else {
+          cy.log('버튼에 존재하는 다국어 코드가 매칭이 안됩니다.')
+        }
+  }
