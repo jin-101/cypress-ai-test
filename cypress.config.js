@@ -1,12 +1,13 @@
 const { defineConfig } = require("cypress");
 module.exports = defineConfig({
+  projectId: "c0e16f05-b1c0-42f5-9e64-5f1efbc2396c",
   env: {
-    language : 'ko',
-    baseUrl : 'https://wwwdevt.koreanair.com',
-    translateApiCommonPath : '/api/et/uiCommon/c/i/languageInfo',
+    language: "ko",
+    baseUrl: "https://wwwdevt.koreanair.com",
+    translateApiCommonPath: "/api/et/uiCommon/c/i/languageInfo",
     translate: {},
     isLogin: false,
-    wdsCapsuleVersion : 1
+    wdsCapsuleVersion: 1,
   },
   e2e: {
     // viewport는 여기서 설정
@@ -34,8 +35,8 @@ module.exports = defineConfig({
                 // [수정] AI의 응답을 일관성 있게 만들기 위해 temperature를 0으로 설정합니다.
                 // 0으로 설정하면 AI는 무작위성을 배제하고 항상 가장 확률 높은 결과물을 생성합니다.
                 options: {
-                  temperature: 0
-                }
+                  temperature: 0,
+                },
               }),
             });
 
@@ -46,7 +47,7 @@ module.exports = defineConfig({
             }
 
             const data = await res.json();
-            
+
             // LLM이 응답에 markdown 코드 블록(```)을 포함하는 경우가 많으므로, 순수 코드만 추출합니다.
             const codeBlockRegex = /```(?:javascript|js)?\n([\s\S]*?)\n```/;
             const match = data.response.match(codeBlockRegex);
@@ -56,8 +57,8 @@ module.exports = defineConfig({
             console.error("Failed to connect to Ollama:", e);
             return `// Failed to connect to Ollama at http://localhost:11434\n// Error: ${e.message}`;
           }
-        }
+        },
       });
-    }
-  }
-})
+    },
+  },
+});
