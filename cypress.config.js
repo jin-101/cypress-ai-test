@@ -1,6 +1,6 @@
 const { defineConfig } = require("cypress");
 module.exports = defineConfig({
-  projectId: "90850d1e-db1e-4fae-a7dd-949c3d70eda6",
+  projectId: "now2ta",
   env: {
     language: "ko",
     baseUrl: "https://wwwdevt.koreanair.com",
