@@ -19,11 +19,11 @@ export default function App() {
         실행됩니다.
       </p>
       <div style={{ display: "flex", gap: 12 }}>
-        <button onClick={() => runTest("cypress/e2e/login.cy.js")}>
-          Login Test 실행
+        <button onClick={() => runTest("cypress/e2e/ai_copy_and_mock.cy.js")}>
+          propmt Test 실행
         </button>
-        <button onClick={() => runTest("cypress/e2e/prompt.cy.js")}>
-          Prompt Test 실행
+        <button onClick={() => runTest("cypress/e2e/basic.cy.js")}>
+          basic Test 실행
         </button>
         <button onClick={() => runTest("")}>전체 테스트 실행</button>
       </div>
