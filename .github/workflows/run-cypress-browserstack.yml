@@ -56,7 +56,7 @@ jobs:
       - name: Override spec if provided
         run: |
           if [ -n "${{ github.event.inputs.spec }}" ]; then
-            node -e "const fs=require('fs');const c=require('./browserstack.json');c.run_settings.specs='${{ github.event.inputs.spec }}';fs.writeFileSync('browserstack.json',JSON.stringify(c,null,2));"
+            jq '.run_settings.specs = "${{ github.event.inputs.spec }}"' browserstack.json > browserstack.json.tmp && mv browserstack.json.tmp browserstack.json
           fi
 
       - name: Run tests on BrowserStack

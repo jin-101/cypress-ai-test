@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+
+# Environment variables
+# Never commit .env files - they contain secrets!
+.env
+*.env
+
+# Cypress - Test Results, Videos, and Screenshots
+/cypress/downloads/
+/cypress/reports/
+/cypress/screenshots/
+/cypress/videos/
+cypress.env.json
+
+# Build output
+/dist
+/build
+
+# IDE files & OS files
+.idea
+.DS_Store
