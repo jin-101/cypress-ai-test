@@ -22,8 +22,8 @@
   "browsers": [
     {
       "browser": "chrome",
-      "os": "osx",
-      "versions": ["Ventura"]
+      "os": "OS X Ventura",
+      "versions": ["latest"]
     }
   ]
 }
