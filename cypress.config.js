@@ -61,4 +61,5 @@ module.exports = defineConfig({
       });
     },
   },
+  video: true, // video: true가 포함되어 있는지 확인
 });
