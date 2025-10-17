@@ -16,7 +16,7 @@
     }
   },
   "connection_settings": {
-    "local": true,
+    "local": false,
     "local_identifier": "ci-local-01"
   },
   "browsers": [
