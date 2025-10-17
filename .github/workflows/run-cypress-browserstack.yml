@@ -61,6 +61,17 @@ jobs:
             jq '.run_settings.specs = "${{ github.event.inputs.spec }}"' browserstack-ci.json > browserstack-ci.json.tmp && mv browserstack-ci.json.tmp browserstack-ci.json
           fi
 
+      - name: setup-env
+        uses: browserstack/github-actions/setup-env@v1
+        with:
+          browserstack_username: ${{ secrets.BROWSERSTACK_USERNAME }}
+          browserstack_access_key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+
+      - name: setup-local
+        uses: browserstack/github-actions/setup-local@v1
+        with:
+          local_identifier: ci-local-01 # browserstack.json과 동일하게 설정
+
       - name: Run tests on BrowserStack
         env:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
