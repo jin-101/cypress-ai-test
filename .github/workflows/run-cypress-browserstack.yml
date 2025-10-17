@@ -49,21 +49,23 @@ jobs:
           tail -n +1 bslocal.log
 
       - name: Inject BrowserStack secrets into config
+        id: create_config
         run: |
-          cp browserstack.json browserstack.json.orig
-          sed -e "s|\${BROWSERSTACK_USERNAME}|${{ secrets.BROWSERSTACK_USERNAME }}|g"               -e "s|\${BROWSERSTACK_ACCESS_KEY}|${{ secrets.BROWSERSTACK_ACCESS_KEY }}|g"               browserstack.json.orig > browserstack.json
+          sed -e "s|\${BROWSERSTACK_USERNAME}|${{ secrets.BROWSERSTACK_USERNAME }}|g" \
+              -e "s|\${BROWSERSTACK_ACCESS_KEY}|${{ secrets.BROWSERSTACK_ACCESS_KEY }}|g" \
+              browserstack.json > browserstack-ci.json
 
       - name: Override spec if provided
         run: |
           if [ -n "${{ github.event.inputs.spec }}" ]; then
-            jq '.run_settings.specs = "${{ github.event.inputs.spec }}"' browserstack.json > browserstack.json.tmp && mv browserstack.json.tmp browserstack.json
+            jq '.run_settings.specs = "${{ github.event.inputs.spec }}"' browserstack-ci.json > browserstack-ci.json.tmp && mv browserstack-ci.json.tmp browserstack-ci.json
           fi
 
       - name: Run tests on BrowserStack
         env:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-        run: npx browserstack-cypress run --sync
+        run: npx browserstack-cypress run --sync --config-file browserstack-ci.json
 
       - name: Stop BrowserStackLocal
         if: always()
