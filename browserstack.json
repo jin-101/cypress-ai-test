@@ -23,7 +23,7 @@
     {
       "browser": "chrome",
       "os": "osx",
-      "os_version": "Ventura"
+      "versions": ["Ventura"]
     }
   ]
 }
