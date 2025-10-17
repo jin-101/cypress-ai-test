@@ -1,0 +1,72 @@
+name: Run Cypress on BrowserStack
+
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: 'Which spec path (optional)'
+        required: false
+        default: ''
+      runLabel:
+        description: 'Label for this run'
+        required: false
+        default: 'Triggered via UI'
+
+jobs:
+  browserstack-cypress:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download BrowserStackLocal binary
+        run: |
+          curl -sS -L -o BrowserStackLocal.zip "https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip"
+          unzip -q BrowserStackLocal.zip -d .
+
+      - name: Start BrowserStackLocal
+        env:
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        run: |
+          chmod +x ./BrowserStackLocal
+          nohup ./BrowserStackLocal --key $BROWSERSTACK_ACCESS_KEY --local-identifier ci-local-01 --daemon start > bslocal.log 2>&1 || true
+          for i in {1..20}; do
+            if grep -q "You can now access your local server(s)" bslocal.log; then
+              echo "BrowserStackLocal connected"
+              break
+            fi
+            sleep 1
+          done
+          tail -n +1 bslocal.log
+
+      - name: Inject BrowserStack secrets into config
+        run: |
+          cp browserstack.json browserstack.json.orig
+          sed -e "s|\${BROWSERSTACK_USERNAME}|${{ secrets.BROWSERSTACK_USERNAME }}|g"               -e "s|\${BROWSERSTACK_ACCESS_KEY}|${{ secrets.BROWSERSTACK_ACCESS_KEY }}|g"               browserstack.json.orig > browserstack.json
+
+      - name: Override spec if provided
+        run: |
+          if [ -n "${{ github.event.inputs.spec }}" ]; then
+            node -e "const fs=require('fs');const c=require('./browserstack.json');c.run_settings.specs='${{ github.event.inputs.spec }}';fs.writeFileSync('browserstack.json',JSON.stringify(c,null,2));"
+          fi
+
+      - name: Run tests on BrowserStack
+        env:
+          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        run: npx browserstack-cypress run --sync
+
+      - name: Stop BrowserStackLocal
+        if: always()
+        env:
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        run: ./BrowserStackLocal --key $BROWSERSTACK_ACCESS_KEY --local-identifier ci-local-01 --daemon stop || true
